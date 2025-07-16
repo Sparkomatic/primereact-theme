@@ -1,0 +1,36 @@
+{
+  "name": "primereact-theme",
+  "version": "0.1.0",
+  "description": "PrimeReact theme package with design tokens and component mapping.",
+  "main": "dist/theme.css",
+  "types": "theme-mapping/theme-mapping.ts",
+  "scripts": {
+    "build": "ts-node scripts/generate-css.ts",
+    "demo": "cd demo && npm start"
+  },
+  "files": [
+    "dist/theme.css",
+    "tokens/tokens.json",
+    "theme-mapping/theme-mapping.ts"
+  ],
+  "keywords": [
+    "primereact",
+    "theme",
+    "design-tokens",
+    "css",
+    "components"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "primereact": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.14",
+    "primereact": "^10.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}
