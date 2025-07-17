@@ -1,0 +1,556 @@
+/* ======================================== */
+/* PRIMEREACT THEME SCSS REFERENCE */
+/* ======================================== */
+/* This file shows the actual SCSS variable structure used in PrimeReact themes */
+/* Based on: https://github.com/primefaces/primereact-sass-theme/blob/main/themes/luna/_variables.scss */
+/* This is a reference file - not actually used in the demo */
+
+// ========================================
+// CORE SCSS VARIABLES (ACTUAL STRUCTURE)
+// ========================================
+
+// Typography
+$fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$fontSize: 1rem !default;
+$fontWeight: normal !default;
+$fontFeatureSettings: normal !default;
+
+// Colors
+$textColor: #495057 !default;
+$textColorSecondary: #6c757d !default;
+$primaryColor: #3b82f6 !default;
+$primaryLightColor: #60a5fa !default;
+$primaryDarkColor: #2563eb !default;
+$primaryDarkerColor: #1d4ed8 !default;
+$primaryTextColor: #ffffff !default;
+
+// Surface System (Legacy)
+$surfaceA: #ffffff !default;
+$surfaceB: #f8f9fa !default;
+$surfaceC: #e9ecef !default;
+$surfaceD: #dee2e6 !default;
+$surfaceE: #ffffff !default;
+$surfaceF: #ffffff !default;
+
+// Surface System (Modern Scale)
+$surface0: #ffffff !default;
+$surface50: #f9fafb !default;
+$surface100: #f3f4f6 !default;
+$surface200: #e5e7eb !default;
+$surface300: #d1d5db !default;
+$surface400: #9ca3af !default;
+$surface500: #6b7280 !default;
+$surface600: #4b5563 !default;
+$surface700: #374151 !default;
+$surface800: #1f2937 !default;
+$surface900: #111827 !default;
+$surface950: #030712 !default;
+
+// Gray Scale
+$gray0: #ffffff !default;
+$gray50: #f9fafb !default;
+$gray100: #f3f4f6 !default;
+$gray200: #e5e7eb !default;
+$gray300: #d1d5db !default;
+$gray400: #9ca3af !default;
+$gray500: #6b7280 !default;
+$gray600: #4b5563 !default;
+$gray700: #374151 !default;
+$gray800: #1f2937 !default;
+$gray900: #111827 !default;
+$gray950: #030712 !default;
+
+// Layout & Spacing
+$contentPadding: 1.25rem !default;
+$inlineSpacing: 0.5rem !default;
+$borderRadius: 6px !default;
+$borderRadiusTopLeft: 6px !default;
+$borderRadiusTopRight: 6px !default;
+$borderRadiusBottomLeft: 6px !default;
+$borderRadiusBottomRight: 6px !default;
+
+// Surface Semantic Variables
+$surfaceGround: #f8f9fa !default;
+$surfaceSection: #ffffff !default;
+$surfaceCard: #ffffff !default;
+$surfaceOverlay: #ffffff !default;
+$surfaceBorder: #dee2e6 !default;
+$surfaceHover: #e9ecef !default;
+
+// Focus & Interaction
+$focusRing: 0 0 0 0.2rem #bfdbfe !default;
+$focusRingColor: #bfdbfe !default;
+$maskBg: rgba(0, 0, 0, 0.4) !default;
+$highlightBg: #eff6ff !default;
+$highlightTextColor: #1d4ed8 !default;
+
+// Transitions
+$transitionDuration: 0.2s !default;
+$formElementTransition: background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration !default;
+$actionIconTransition: background-color $transitionDuration, color $transitionDuration, box-shadow $transitionDuration !default;
+$listItemTransition: box-shadow $transitionDuration !default;
+
+// Icons
+$primeIconFontSize: 1rem !default;
+$loadingIconFontSize: 2rem !default;
+
+// Misc
+$divider: 1px solid $surfaceD !default;
+$disabledOpacity: 0.6 !default;
+$errorColor: #dc3545 !default;
+$scaleSM: 0.875 !default;
+$scaleLG: 1.25 !default;
+
+// ========================================
+// COMPONENT-SPECIFIC VARIABLES
+// ========================================
+
+// Button Variables
+$buttonPaddingX: 1rem !default;
+$buttonPaddingY: 0.5rem !default;
+$buttonBorderRadius: $borderRadius !default;
+$buttonFontWeight: 600 !default;
+$buttonTextColor: $primaryTextColor !default;
+$buttonBg: $primaryColor !default;
+$buttonBorder: 1px solid $primaryColor !default;
+$buttonHoverBg: $primaryDarkColor !default;
+$buttonHoverBorderColor: $primaryDarkColor !default;
+$buttonActiveBg: $primaryDarkerColor !default;
+$buttonActiveBorderColor: $primaryDarkerColor !default;
+$buttonFocusShadow: 0 0 0 2px #ffffff, 0 0 0 4px $primaryLightColor !default;
+
+// Input Variables
+$inputPaddingX: 0.75rem !default;
+$inputPaddingY: 0.5rem !default;
+$inputBorderRadius: $borderRadius !default;
+$inputBorderColor: $surfaceBorder !default;
+$inputBg: $surfaceCard !default;
+$inputTextColor: $textColor !default;
+$inputPlaceholderColor: $textColorSecondary !default;
+$inputFocusBorderColor: $primaryColor !default;
+$inputFocusBg: $surfaceCard !default;
+$inputHoverBorderColor: $primaryLightColor !default;
+$inputDisabledBg: $surfaceC !default;
+$inputDisabledTextColor: $textColorSecondary !default;
+
+// Form Field Variables
+$formFieldBackground: $surfaceCard !default;
+$formFieldBorderColor: $surfaceBorder !default;
+$formFieldFocusBorderColor: $primaryColor !default;
+$formFieldHoverBorderColor: $primaryLightColor !default;
+$formFieldDisabledBackground: $surfaceC !default;
+$formFieldPlaceholderColor: $textColorSecondary !default;
+$formFieldInvalidBorderColor: $errorColor !default;
+$formFieldInvalidBg: #fff5f5 !default;
+
+// Overlay Variables
+$overlayBg: $maskBg !default;
+$overlayBorderColor: $surfaceBorder !default;
+$overlayBorderRadius: $borderRadius !default;
+$overlayShadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !default;
+
+// Dialog Variables
+$dialogBg: $surfaceCard !default;
+$dialogBorderColor: $surfaceBorder !default;
+$dialogBorderRadius: $borderRadius !default;
+$dialogShadow: $overlayShadow !default;
+$dialogHeaderBg: $surfaceCard !default;
+$dialogHeaderBorderColor: $surfaceBorder !default;
+$dialogHeaderTextColor: $textColor !default;
+$dialogHeaderFontWeight: 600 !default;
+$dialogHeaderPadding: 1.5rem !default;
+$dialogContentBg: $surfaceCard !default;
+$dialogContentTextColor: $textColor !default;
+$dialogContentPadding: 1.5rem !default;
+
+// Panel Variables
+$panelBg: $surfaceCard !default;
+$panelBorderColor: $surfaceBorder !default;
+$panelBorderRadius: $borderRadius !default;
+$panelShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !default;
+$panelHeaderBg: $surfaceCard !default;
+$panelHeaderBorderColor: $surfaceBorder !default;
+$panelHeaderTextColor: $textColor !default;
+$panelHeaderFontWeight: 600 !default;
+$panelHeaderPadding: 1.5rem !default;
+$panelContentBg: $surfaceCard !default;
+$panelContentTextColor: $textColor !default;
+$panelContentPadding: 1.5rem !default;
+
+// DataTable Variables
+$datatableBg: $surfaceCard !default;
+$datatableBorderColor: $surfaceBorder !default;
+$datatableBorderRadius: $borderRadius !default;
+$datatableHeaderBg: $surfaceCard !default;
+$datatableHeaderBorderColor: $surfaceBorder !default;
+$datatableHeaderTextColor: $textColor !default;
+$datatableHeaderFontWeight: 600 !default;
+$datatableHeaderPadding: 1rem 1.5rem !default;
+$datatableBodyBg: $surfaceCard !default;
+$datatableBodyTextColor: $textColor !default;
+$datatableBodyBorderColor: $surfaceBorder !default;
+$datatableBodyPadding: 1rem 1.5rem !default;
+$datatableRowHoverBg: $surfaceHover !default;
+$datatableRowSelectedBg: $primaryColor !default;
+$datatableRowSelectedTextColor: $primaryTextColor !default;
+
+// Menu Variables
+$menuBg: $surfaceCard !default;
+$menuBorderColor: $surfaceBorder !default;
+$menuBorderRadius: $borderRadius !default;
+$menuShadow: $overlayShadow !default;
+$menuItemBg: transparent !default;
+$menuItemTextColor: $textColor !default;
+$menuItemPadding: 0.75rem 1rem !default;
+$menuItemHoverBg: $surfaceHover !default;
+$menuItemHoverTextColor: $textColor !default;
+$menuItemActiveBg: $primaryColor !default;
+$menuItemActiveTextColor: $primaryTextColor !default;
+$menuItemFocusShadow: 0 0 0 2px #ffffff, 0 0 0 4px $primaryLightColor !default;
+
+// Tab Variables
+$tabBg: transparent !default;
+$tabBorderColor: $surfaceBorder !default;
+$tabTextColor: $textColor !default;
+$tabPadding: 1rem 1.5rem !default;
+$tabHoverBg: $surfaceHover !default;
+$tabHoverTextColor: $textColor !default;
+$tabActiveBg: transparent !default;
+$tabActiveTextColor: $primaryColor !default;
+$tabActiveBorderColor: $primaryColor !default;
+$tabFocusShadow: 0 0 0 2px #ffffff, 0 0 0 4px $primaryLightColor !default;
+
+// Checkbox Variables
+$checkboxBg: $surfaceCard !default;
+$checkboxBorderColor: $surfaceBorder !default;
+$checkboxBorderRadius: 4px !default;
+$checkboxSize: 20px !default;
+$checkboxHoverBorderColor: $primaryLightColor !default;
+$checkboxCheckedBg: $primaryColor !default;
+$checkboxCheckedBorderColor: $primaryColor !default;
+$checkboxCheckedTextColor: $primaryTextColor !default;
+$checkboxFocusShadow: 0 0 0 2px #ffffff, 0 0 0 4px $primaryLightColor !default;
+
+// RadioButton Variables
+$radiobuttonBg: $surfaceCard !default;
+$radiobuttonBorderColor: $surfaceBorder !default;
+$radiobuttonBorderRadius: 50% !default;
+$radiobuttonSize: 20px !default;
+$radiobuttonHoverBorderColor: $primaryLightColor !default;
+$radiobuttonCheckedBg: $primaryColor !default;
+$radiobuttonCheckedBorderColor: $primaryColor !default;
+$radiobuttonCheckedTextColor: $primaryTextColor !default;
+$radiobuttonFocusShadow: 0 0 0 2px #ffffff, 0 0 0 4px $primaryLightColor !default;
+
+// Dropdown Variables
+$dropdownBg: $surfaceCard !default;
+$dropdownBorderColor: $surfaceBorder !default;
+$dropdownBorderRadius: $borderRadius !default;
+$dropdownShadow: $overlayShadow !default;
+$dropdownItemBg: transparent !default;
+$dropdownItemTextColor: $textColor !default;
+$dropdownItemPadding: 0.75rem 1rem !default;
+$dropdownItemHoverBg: $surfaceHover !default;
+$dropdownItemHoverTextColor: $textColor !default;
+$dropdownItemActiveBg: $primaryColor !default;
+$dropdownItemActiveTextColor: $primaryTextColor !default;
+$dropdownItemFocusShadow: 0 0 0 2px #ffffff, 0 0 0 4px $primaryLightColor !default;
+
+// Calendar Variables
+$calendarBg: $surfaceCard !default;
+$calendarBorderColor: $surfaceBorder !default;
+$calendarBorderRadius: $borderRadius !default;
+$calendarShadow: $overlayShadow !default;
+$calendarHeaderBg: $surfaceCard !default;
+$calendarHeaderBorderColor: $surfaceBorder !default;
+$calendarHeaderTextColor: $textColor !default;
+$calendarHeaderPadding: 1rem !default;
+$calendarDayBg: transparent !default;
+$calendarDayTextColor: $textColor !default;
+$calendarDayPadding: 0.5rem !default;
+$calendarDayHoverBg: $surfaceHover !default;
+$calendarDayHoverTextColor: $textColor !default;
+$calendarDaySelectedBg: $primaryColor !default;
+$calendarDaySelectedTextColor: $primaryTextColor !default;
+$calendarDayTodayBg: $primaryLightColor !default;
+$calendarDayTodayTextColor: $primaryColor !default;
+
+// Message Variables
+$messageBg: $surfaceCard !default;
+$messageBorderColor: $surfaceBorder !default;
+$messageBorderRadius: $borderRadius !default;
+$messageTextColor: $textColor !default;
+$messagePadding: 1rem !default;
+$messageIconFontSize: 1.25rem !default;
+$messageInfoBg: #eff6ff !default;
+$messageInfoBorderColor: #bfdbfe !default;
+$messageInfoTextColor: #1d4ed8 !default;
+$messageSuccessBg: #f0fdf4 !default;
+$messageSuccessBorderColor: #bbf7d0 !default;
+$messageSuccessTextColor: #166534 !default;
+$messageWarningBg: #fffbeb !default;
+$messageWarningBorderColor: #fed7aa !default;
+$messageWarningTextColor: #92400e !default;
+$messageErrorBg: #fef2f2 !default;
+$messageErrorBorderColor: #fecaca !default;
+$messageErrorTextColor: #dc2626 !default;
+
+// Toast Variables
+$toastBg: $surfaceCard !default;
+$toastBorderColor: $surfaceBorder !default;
+$toastBorderRadius: $borderRadius !default;
+$toastShadow: $overlayShadow !default;
+$toastTextColor: $textColor !default;
+$toastPadding: 1rem !default;
+$toastIconFontSize: 1.25rem !default;
+$toastInfoBg: #eff6ff !default;
+$toastInfoBorderColor: #bfdbfe !default;
+$toastInfoTextColor: #1d4ed8 !default;
+$toastSuccessBg: #f0fdf4 !default;
+$toastSuccessBorderColor: #bbf7d0 !default;
+$toastSuccessTextColor: #166534 !default;
+$toastWarningBg: #fffbeb !default;
+$toastWarningBorderColor: #fed7aa !default;
+$toastWarningTextColor: #92400e !default;
+$toastErrorBg: #fef2f2 !default;
+$toastErrorBorderColor: #fecaca !default;
+$toastErrorTextColor: #dc2626 !default;
+
+// ========================================
+// COLOR PALETTES (COMPREHENSIVE)
+// ========================================
+
+// Blue Palette
+$blue50: #eff6ff !default;
+$blue100: #dbeafe !default;
+$blue200: #bfdbfe !default;
+$blue300: #93c5fd !default;
+$blue400: #60a5fa !default;
+$blue500: #3b82f6 !default;
+$blue600: #2563eb !default;
+$blue700: #1d4ed8 !default;
+$blue800: #1e40af !default;
+$blue900: #1e3a8a !default;
+$blue950: #172554 !default;
+
+// Green Palette
+$green50: #f0fdf4 !default;
+$green100: #dcfce7 !default;
+$green200: #bbf7d0 !default;
+$green300: #86efac !default;
+$green400: #4ade80 !default;
+$green500: #22c55e !default;
+$green600: #16a34a !default;
+$green700: #15803d !default;
+$green800: #166534 !default;
+$green900: #14532d !default;
+$green950: #052e16 !default;
+
+// Yellow Palette
+$yellow50: #fefce8 !default;
+$yellow100: #fef3c7 !default;
+$yellow200: #fde68a !default;
+$yellow300: #fcd34d !default;
+$yellow400: #fbbf24 !default;
+$yellow500: #f59e0b !default;
+$yellow600: #d97706 !default;
+$yellow700: #b45309 !default;
+$yellow800: #92400e !default;
+$yellow900: #78350f !default;
+$yellow950: #451a03 !default;
+
+// Red Palette
+$red50: #fef2f2 !default;
+$red100: #fee2e2 !default;
+$red200: #fecaca !default;
+$red300: #fca5a5 !default;
+$red400: #f87171 !default;
+$red500: #ef4444 !default;
+$red600: #dc2626 !default;
+$red700: #b91c1c !default;
+$red800: #991b1b !default;
+$red900: #7f1d1d !default;
+$red950: #450a0a !default;
+
+// Purple Palette
+$purple50: #faf5ff !default;
+$purple100: #f3e8ff !default;
+$purple200: #e9d5ff !default;
+$purple300: #d8b4fe !default;
+$purple400: #c084fc !default;
+$purple500: #a855f7 !default;
+$purple600: #9333ea !default;
+$purple700: #7c3aed !default;
+$purple800: #6b21a8 !default;
+$purple900: #581c87 !default;
+$purple950: #3b0764 !default;
+
+// Orange Palette
+$orange50: #fff7ed !default;
+$orange100: #ffedd5 !default;
+$orange200: #fed7aa !default;
+$orange300: #fdba74 !default;
+$orange400: #fb923c !default;
+$orange500: #f97316 !default;
+$orange600: #ea580c !default;
+$orange700: #c2410c !default;
+$orange800: #9a3412 !default;
+$orange900: #7c2d12 !default;
+$orange950: #431407 !default;
+
+// Pink Palette
+$pink50: #fdf2f8 !default;
+$pink100: #fce7f3 !default;
+$pink200: #fbcfe8 !default;
+$pink300: #f9a8d4 !default;
+$pink400: #f472b6 !default;
+$pink500: #ec4899 !default;
+$pink600: #db2777 !default;
+$pink700: #be185d !default;
+$pink800: #9d174d !default;
+$pink900: #831843 !default;
+$pink950: #500724 !default;
+
+// Indigo Palette
+$indigo50: #eef2ff !default;
+$indigo100: #e0e7ff !default;
+$indigo200: #c7d2fe !default;
+$indigo300: #a5b4fc !default;
+$indigo400: #818cf8 !default;
+$indigo500: #6366f1 !default;
+$indigo600: #4f46e5 !default;
+$indigo700: #4338ca !default;
+$indigo800: #3730a3 !default;
+$indigo900: #312e81 !default;
+$indigo950: #1e1b4b !default;
+
+// Teal Palette
+$teal50: #f0fdfa !default;
+$teal100: #ccfbf1 !default;
+$teal200: #99f6e4 !default;
+$teal300: #5eead4 !default;
+$teal400: #2dd4bf !default;
+$teal500: #14b8a6 !default;
+$teal600: #0d9488 !default;
+$teal700: #0f766e !default;
+$teal800: #115e59 !default;
+$teal900: #134e4a !default;
+$teal950: #042f2e !default;
+
+// Cyan Palette
+$cyan50: #ecfeff !default;
+$cyan100: #cffafe !default;
+$cyan200: #a5f3fc !default;
+$cyan300: #67e8f9 !default;
+$cyan400: #22d3ee !default;
+$cyan500: #06b6d4 !default;
+$cyan600: #0891b2 !default;
+$cyan700: #0e7490 !default;
+$cyan800: #155e75 !default;
+$cyan900: #164e63 !default;
+$cyan950: #083344 !default;
+
+// Slate Palette
+$slate50: #f8fafc !default;
+$slate100: #f1f5f9 !default;
+$slate200: #e2e8f0 !default;
+$slate300: #cbd5e1 !default;
+$slate400: #94a3b8 !default;
+$slate500: #64748b !default;
+$slate600: #475569 !default;
+$slate700: #334155 !default;
+$slate800: #1e293b !default;
+$slate900: #0f172a !default;
+$slate950: #020617 !default;
+
+// ========================================
+// LEGACY SHADE SYSTEM (Deprecated)
+// ========================================
+// These are still supported for backward compatibility
+
+$shade000: $surface0 !default;
+$shade100: $surface50 !default;
+$shade200: $surface100 !default;
+$shade300: $surface200 !default;
+$shade400: $surface300 !default;
+$shade500: $surface400 !default;
+$shade600: $surface600 !default;
+$shade700: $surface700 !default;
+$shade800: $surface800 !default;
+$shade900: $surface900 !default;
+
+// ========================================
+// HOW TO USE THESE VARIABLES
+// ========================================
+
+// Example: Creating a custom theme
+// 1. Create a new SCSS file (e.g., _my-theme-variables.scss)
+// 2. Override the variables you want to change:
+
+/*
+// _my-theme-variables.scss
+$primaryColor: #a855f7; // Purple instead of blue
+$primaryLightColor: #c084fc;
+$primaryDarkColor: #9333ea;
+$primaryDarkerColor: #7c3aed;
+$primaryTextColor: #ffffff;
+
+// Update focus ring to match primary color
+$focusRing: 0 0 0 0.2rem rgba(168, 85, 247, 0.2);
+$focusRingColor: rgba(168, 85, 247, 0.2);
+
+// Update highlight colors
+$highlightBg: rgba(168, 85, 247, 0.1);
+$highlightTextColor: #581c87;
+
+// Update form field focus colors
+$inputFocusBorderColor: $primaryColor;
+$formFieldFocusBorderColor: $primaryColor;
+
+// Update button colors
+$buttonBg: $primaryColor;
+$buttonBorder: 1px solid $primaryColor;
+$buttonHoverBg: $primaryDarkColor;
+$buttonHoverBorderColor: $primaryDarkColor;
+$buttonActiveBg: $primaryDarkerColor;
+$buttonActiveBorderColor: $primaryDarkerColor;
+$buttonFocusShadow: 0 0 0 2px #ffffff, 0 0 0 4px $primaryLightColor;
+*/
+
+// ========================================
+// COMPILATION PROCESS
+// ========================================
+
+/*
+To compile a custom theme:
+
+1. Download the PrimeReact SCSS theme from:
+   https://github.com/primefaces/primereact-sass-theme
+
+2. Create your theme folder structure:
+   themes/
+   ├── my-theme/
+   │   ├── _variables.scss (your overrides)
+   │   ├── _fonts.scss (optional)
+   │   ├── _extensions.scss (optional)
+   │   └── theme.scss (imports everything)
+
+3. Compile with sass:
+   sass --update themes/my-theme/theme.scss:themes/my-theme/theme.css
+
+4. Import the generated CSS in your app:
+   import 'themes/my-theme/theme.css';
+*/
+
+// ========================================
+// NOTES
+// ========================================
+
+/*
+- This file shows the ACTUAL SCSS variable structure from PrimeReact
+- Based on the Luna theme variables: https://github.com/primefaces/primereact-sass-theme/blob/main/themes/luna/_variables.scss
+- Many components use hardcoded colors that override CSS variables
+- For complete theming, you need to override both SCSS variables AND CSS selectors
+- The CSS override approach (like in theme-override.css) is often simpler for quick changes
+- This reference shows the comprehensive variable system available for custom themes
+*/ 
