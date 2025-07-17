@@ -1,0 +1,133 @@
+/* Component Overrides: Uses correct Supernova variable naming pattern */
+
+/* BUTTONS */
+.p-button {
+  background: var(--color-components-button-primary-background);
+  color: var(--color-components-button-primary-color);
+  border-color: var(--color-components-button-primary-border-color);
+}
+.p-button.p-button-secondary {
+  background: var(--color-components-button-secondary-background);
+  color: var(--color-components-button-secondary-color);
+  border-color: var(--color-components-button-secondary-border-color);
+}
+.p-button.p-button-success {
+  background: var(--color-components-button-success-background);
+  color: var(--color-components-button-success-color);
+  border-color: var(--color-components-button-success-border-color);
+}
+.p-button.p-button-info {
+  background: var(--color-components-button-info-background);
+  color: var(--color-components-button-info-color);
+  border-color: var(--color-components-button-info-border-color);
+}
+.p-button.p-button-warning {
+  background: var(--color-components-button-warn-background);
+  color: var(--color-components-button-warn-color);
+  border-color: var(--color-components-button-warn-border-color);
+}
+.p-button.p-button-danger {
+  background: var(--color-components-button-danger-background);
+  color: var(--color-components-button-danger-color);
+  border-color: var(--color-components-button-danger-border-color);
+}
+.p-button:hover {
+  /* Add hover variables if available */
+}
+
+/* CHECKBOX */
+.p-checkbox .p-checkbox-box {
+  background: var(--color-components-checkbox-background);
+  border-color: var(--color-components-checkbox-border-color);
+}
+.p-checkbox .p-checkbox-box.p-highlight {
+  background: var(--color-components-checkbox-checked-background);
+  border-color: var(--color-components-checkbox-checked-border-color);
+}
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+  color: var(--color-components-checkbox-icon-color);
+}
+.p-checkbox .p-checkbox-box.p-highlight .p-checkbox-icon {
+  color: var(--color-components-checkbox-icon-checked-color);
+}
+.p-checkbox.p-disabled .p-checkbox-box {
+  background: var(--color-components-checkbox-disabled-background);
+  color: var(--color-components-checkbox-disabled-color);
+}
+
+/* INPUTTEXT */
+.p-inputtext {
+  background: var(--color-components-inputtext-background);
+  color: var(--color-components-inputtext-color);
+  border-color: var(--color-components-inputtext-border-color);
+}
+.p-inputtext::placeholder {
+  color: var(--color-components-inputtext-placeholder-color);
+}
+.p-inputtext:disabled {
+  background: var(--color-components-inputtext-disabled-background);
+  color: var(--color-components-inputtext-disabled-color);
+}
+.p-inputtext:hover {
+  border-color: var(--color-components-inputtext-hover-border-color);
+}
+.p-inputtext:focus {
+  border-color: var(--color-components-inputtext-focus-border-color);
+}
+.p-inputtext.p-invalid {
+  border-color: var(--color-components-inputtext-invalid-border-color);
+}
+
+/* DROPDOWN (SELECT) */
+.p-dropdown {
+  background: var(--color-components-select-background);
+  color: var(--color-components-select-color);
+  border-color: var(--color-components-select-border-color);
+}
+.p-dropdown-item.p-highlight,
+.p-dropdown-item.p-selected {
+  background: var(--color-components-select-option-selected-background);
+  color: var(--color-components-select-option-selected-color);
+}
+.p-dropdown-item.p-highlight:focus,
+.p-dropdown-item.p-selected:focus {
+  background: var(--color-components-select-option-selected-focus-background);
+  color: var(--color-components-select-option-selected-focus-color);
+}
+
+/* DATEPICKER / CALENDAR */
+.p-calendar .p-inputtext {
+  background: var(--color-components-datepicker-dropdown-background);
+  color: var(--color-components-datepicker-dropdown-color);
+  border-color: var(--color-components-datepicker-dropdown-border-color);
+}
+.p-calendar .p-inputtext:focus {
+  border-color: var(--color-components-datepicker-dropdown-border-color);
+  box-shadow: 0 0 0 2px var(--color-components-datepicker-date-focus-ring-color);
+}
+.p-datepicker .p-datepicker-calendar .p-datepicker-today {
+  background: var(--color-components-datepicker-today-background);
+  color: var(--color-components-datepicker-today-color);
+}
+.p-datepicker .p-datepicker-calendar .p-highlight {
+  background: var(--color-components-datepicker-date-selected-background);
+  color: var(--color-components-datepicker-date-selected-color);
+}
+.p-datepicker .p-datepicker-calendar td:not(.p-highlight):hover {
+  background: var(--color-components-datepicker-date-hover-background);
+  color: var(--color-components-datepicker-date-hover-color);
+}
+
+/* TABS */
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background: var(--color-components-tabs-tab-background);
+  color: var(--color-components-tabs-tab-color);
+}
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  background: var(--color-components-tabs-tab-active-background);
+  color: var(--color-components-tabs-tab-active-color);
+}
+.p-tabview .p-tabview-nav li:not(.p-highlight):hover .p-tabview-nav-link {
+  background: var(--color-components-tabs-tab-hover-background);
+  color: var(--color-components-tabs-tab-hover-color);
+} 
