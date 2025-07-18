@@ -128,3 +128,54 @@ This project uses a `component-overrides.css` file to provide fine-grained contr
 - Commit your changes and review the UI.
 - If you need to support more components or states, add new selectors and map them to tokens as needed.
 - Consider automating or documenting your mapping strategy for future maintainability.
+
+## Custom PrimeReact SCSS Theming Setup
+
+### Folder Structure
+
+```
+src/prime-themes/
+  primereact-sass-theme/      # Official PrimeReact theme source (do not edit)
+    themes/
+      lara/
+        lara-light/
+          blue/              # Lara Light Blue SCSS files
+            theme.scss
+            _fonts.scss
+            ...
+          ... (other color variants)
+        ...
+  _custom-variables.scss      # Your custom variable overrides
+  my-lara-theme.scss          # Entry point: imports overrides, then theme
+  my-lara-theme.css           # Generated CSS (output)
+```
+
+### How to Customize the Theme
+
+1. **Edit your variable overrides:**
+   - File: `src/prime-themes/_custom-variables.scss`
+   - Example:
+     ```scss
+     $primaryColor: #32CD32 !default; // Lime Green
+     $primaryTextColor: #fff !default;
+     $surfaceGround: #f8fafc !default;
+     // Add more overrides as needed
+     ```
+
+2. **Build the theme:**
+   - Run:
+     ```sh
+     npm run build-theme
+     ```
+   - This compiles `my-lara-theme.scss` to `my-lara-theme.css` using your overrides.
+
+3. **Import the generated CSS in your app:**
+   - In `src/main.tsx`:
+     ```js
+     import './prime-themes/my-lara-theme.css';
+     ```
+
+### Notes
+- Do **not** edit files in `primereact-sass-theme/` directly. Only update `_custom-variables.scss` for your customizations.
+- To update the Lara theme, replace the contents of `primereact-sass-theme/` with the new version from the official repo.
+- All PrimeReact component styles and selectors are generated automatically by the build script.

@@ -17,53 +17,25 @@ export default function App() {
   ];
 
   return (
-    <div style={{ padding: 32 }}>
-      <h1>PrimeReact Demo</h1>
-      
-      <div style={{ margin: '16px 0' }}>
-        <h3>Buttons</h3>
-        <Button label="Primary Button" style={{ marginRight: 8 }} />
-        <Button label="Secondary Button" severity="secondary" style={{ marginRight: 8 }} />
-        <Button label="Success Button" severity="success" style={{ marginRight: 8 }} />
-        <Button label="Info Button" severity="info" style={{ marginRight: 8 }} />
-        <Button label="Warning Button" severity="warning" style={{ marginRight: 8 }} />
-        <Button label="Danger Button" severity="danger" />
-      </div>
-
-      <div style={{ margin: '16px 0' }}>
-        <h3>Form Components</h3>
-        <InputText placeholder="Type here..." style={{ marginRight: 8 }} />
-        <Calendar 
-          value={date} 
-          onChange={(e) => setDate(e.value || null)} 
-          placeholder="Select Date"
-          style={{ marginRight: 8 }}
-        />
-        <Dropdown
-          value={selectedCity}
-          options={cities}
-          onChange={e => setSelectedCity(e.value)}
-          optionLabel="name"
-          placeholder="Select a City"
-        />
-      </div>
-
-      <div style={{ margin: '16px 0' }}>
-        <Checkbox
-          inputId="cb1"
-          checked={checked}
-          onChange={e => setChecked(!!e.checked)}
-        />
-        <label htmlFor="cb1" style={{ marginLeft: 8 }}>Check me</label>
-      </div>
-
-      <div style={{ margin: '16px 0' }}>
-        <h3>Tabs</h3>
-        <TabView>
-          <TabPanel header="Tab 1">Content 1</TabPanel>
-          <TabPanel header="Tab 2">Content 2</TabPanel>
-        </TabView>
-      </div>
+    <div style={{ maxWidth: 400, margin: '2rem auto', fontFamily: 'system-ui' }}>
+      <h2>PrimeReact Unstyled Demo scss</h2>
+      <section>
+        <h3>Button (uses --color-primary)</h3>
+        <Button className="my-primary-button" label="My Purple Button" />
+      </section>
+      <section>
+        <h3>InputText (focus border uses --color-primary)</h3>
+        <InputText className="my-primary-input" placeholder="Type here..." />
+      </section>
+      <section>
+        <h3>Dropdown (focus border uses --color-primary)</h3>
+        <Dropdown className="my-primary-dropdown" value={selectedCity} options={cities} onChange={e => setSelectedCity(e.value)} optionLabel="name" placeholder="Select a City" />
+      </section>
+      <section>
+        <h3>Checkbox (checked uses --color-primary)</h3>
+        <Checkbox className="my-primary-checkbox" checked={checked} onChange={e => setChecked(e.checked!)} />
+        <span style={{ marginLeft: 8 }}>Check me</span>
+      </section>
     </div>
   );
 }
